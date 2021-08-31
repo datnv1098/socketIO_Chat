@@ -3,28 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Socket.io simple chat</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <div class="container">
-      <div class="inbox">
-        <div class="inbox__people">
-          <h4>Active users</h4>
-        </div>
-        <div class="inbox__messages">
-          <div class="messages__history"></div>
-          <div class="fallback"></div>
-        </div>
-      </div>
-
-      <form class="message_form">
-        <input type="text" class="message_form__input" placeholder="Type a message" />
-        <button class="message_form__button" type="submit">
-          Enter
-        </button>
-      </form>
-    </div> 
+  <body> 
     <div class="wrapper">
       <div class="container">
           <div class="left">
@@ -73,7 +56,14 @@
               </ul>
           </div>
           <div class="right">
-              <div class="top"><span>To: <span class="name">Dog Woofson</span></span></div>
+              <div class="top">
+                  <div class="top_name"><span>To: <span class="name">Dog Woofson</span></span></div>
+                  <div class="operation">
+                        <a class="item" href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                        <a class="item" href=""><i class="fa fa-phone" aria-hidden="true"></i></a>
+                        <a class="item" href=""><i class="fa fa-user-plus" aria-hidden="true"></i></a>
+                  </div>
+                </div>
               <div class="chat" data-chat="person1">
                   <div class="conversation-start">
                       <span>Today, 6:48 AM</span>
